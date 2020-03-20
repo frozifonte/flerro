@@ -1,3 +1,7 @@
+* {
+   padding: 0;
+    margin: 0;
+}
 @font-face {
     font-family: 'Fira Sans Regular', sans-serif;
     src:url(../fonts/FiraSans-Regular.ttf);
@@ -9,4 +13,14 @@
 @font-face {
     font-family: 'Montserrat Bold', sans-serif;
     src:url(../fonts/Montserrat-Bold.ttf);
+}
+.modal{
+     color: #484848;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px dashed #484848;
+}
+.modal:hover{
+    color: #FFC341;
+    border-bottom: 1px dashed #FFC341;
 }

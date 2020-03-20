@@ -1,0 +1,54 @@
+.nav__items{
+    display: flex;
+    justify-content: space-around;
+}
+.nav__item{
+    font-size: 15px;
+    font-family: "Fira Sans Meduim", sans-serif;
+    color: #484848;
+}
+.nav__tel{
+    text-decoration: none;
+    color: #484848;
+    padding-top: 48px;
+    display: block;
+}
+.nav__logo{
+    padding-top: 32px;
+}
+.nav__modal{
+    display: block;
+    padding-top: 48px;
+}
+
+.nav__tel:hover{
+     color: #FFC341;
+}
+.nav__items--mobile{
+    display: none;
+}
+@media screen and (max-width:427px){
+    .nav__items{
+       display: none;
+    }
+    .nav__items--mobile{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .nav__item{
+        font-size: 14px;
+}
+    .nav__modal{
+        padding-top: 8px;
+        padding-right: 7px;
+    }
+    .nav__logo{
+    padding-top: 20px;
+    padding-left: 16px;
+}
+    .nav__tel{
+        padding-top: 20px;
+        padding-right: 7px;
+    }
+}
