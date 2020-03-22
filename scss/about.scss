@@ -1,0 +1,39 @@
+.about{
+    text-align: center;
+    margin: 0 auto;
+}
+.about__video{
+    background: url(../img/02/watercolor.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+.about__content{
+    width: 720px;
+    height: 87px;
+    margin: 0 auto;
+}
+.about__title{
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.about__descr{
+    font-size: 17px;
+}
+@media screen and (max-width:878px){
+    
+}
+
+  <section class="about">
+               <div class="about__content">
+                    <h1 class="about__title title">О ПРОГРАММЕ</h1>
+                    <p class="about__descr description">"Маса" - совместный проект правительства Израиля и Еврейского агенства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
+                </div>
+                <div class="about__video">
+                   
+                     <video poster="img/02/photo.png" width="870px" class="about__" height="668px">
+                        <div class="about__play"></div>
+                     </video>
+                    
+                </div>
+            
+        </section>
