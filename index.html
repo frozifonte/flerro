@@ -17,7 +17,7 @@
                    <img src="img/01/logo.png" alt="Лого" class="nav__logo">
                 </div>
                 <div class="nav__item">
-                    <b><a href="" class="nav__modal modal">заказать звонок</a></b>
+                    <b><a class="nav__modal modal-button" id="modalButton">заказать звонок</a></b>
                 </div>
             </div>
              <div class="nav__items--mobile">
@@ -30,12 +30,38 @@
                         </div>
 
                         <div class="nav__item">
-                            <b><a href="" class="nav__modal modal">заказать звонок</a></b>
+                            <b><a href="" class="nav__modal modal-button" id="modalButton">заказать звонок</a></b>
                     </div>
                 </div>
             </div>
             
         </nav>
+        <div id="modalForm" class="modal-form modal">
+            <div class="modal__window">
+                <p class="modal__close" id="modalCloseFm">x</p>
+                <div class="content-modal-form">
+                    <h3 class="modal__title title">Заказать звонок</h3>
+                    <p class="modal__descr description">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
+                    <form action="" class="form">
+                        <input type="text" name="name" class="form__item input-text" placeholder="ИМЯ" style="margin-bottom: 8px;" required><br>
+                        <input type="text" name="tel" class="form__item input-text" placeholder="ТЕЛЕФОН" required><br>
+                        <button class="form__item--button button " id="formButn" onclick="move()">перезвоните мне</button><br>
+                        <input type="checkbox" class="form__item--ckeckbox" id="check"><label for="check" class="form__item--chech-descr" >Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="modalSuc" class="modal-succes modal">
+            <div class="modal-succes__wind modal__window">
+                <p class="modal__close" id="modalCloseSuc">x</p>
+                <div class="content-modal-succes">
+                    <img src="img/Ok.png">
+                    <h3 class="modal__title title">Заявка принята</h3>
+                    <p class="modal__descr description">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+                    <button class="modal-succes__item button" id="checkBtn">понятно</button>
+                </div>
+            </div>
+        </div>
         <div class="header__items">
         <p class="header__item">
             <b>Учёба, путешествие и карьера
@@ -69,7 +95,24 @@
        </a>
        </div>
     </header>
-    <main></main>
+    <main>
+<!--
+        <section class="about">
+               <div class="about__content">
+                    <h1 class="about__title title">О ПРОГРАММЕ</h1>
+                    <p class="about__descr description">"Маса" - совместный проект правительства Израиля и Еврейского агенства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
+                </div>
+                <div class="about__video">
+                   
+                     <video poster="img/02/photo.png" width="870px" class="about__" height="668px">
+                        <div class="about__play"></div>
+                     </video>
+                    
+                </div>
+            
+        </section>
+-->
+    </main>
     <footer></footer>
     <script src="js/script.js"></script>
 </body>

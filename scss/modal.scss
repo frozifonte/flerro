@@ -1,0 +1,97 @@
+.modal{
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left:0;
+    right:0;
+    background-color:#E5E5E5;
+    z-index: 999;
+   
+    
+}
+.content-modal-form{
+    padding-top: 7px;
+    padding-left: 48p;
+}
+.modal-form{
+     transition: top 2s ease-out 5s;
+    display: none;
+}
+.modal-succes{
+    display: none;
+}
+.modal__window{
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:20px;
+    width:480px;
+    height: 521px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 500;
+}
+ 
+.modal-succes__wind {
+    margin: 0 auto;
+    text-align: center;
+}
+.modal__close{
+    position: absolute;
+    right:0;
+    top:0;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background:linear-gradient(109.42deg, #FFC341 20.46%, #FFD701 65.31%);
+}
+.content-modal-succes{
+    padding: 120px 60px;
+}
+.form{
+    text-align: center;
+}
+input[type="checkbox"]{
+    
+    width: 16px;
+    height: 16px;
+    
+}
+.form__item--chech-descr{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #484848;
+    opacity: 0.74;
+}
+.modal__descr {
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+.form__item--button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+label:before{
+    border-radius: 50px;
+    border:1px solid #FFC341;
+}
+@media screen and (max-width:320px){
+    .modal{
+        background-color:#fff;
+    }
+    .modal__window{
+    background-color: #fff;
+    position: fixed;
+    top:50%;
+    left:50%;
+    text-align: center;
+    width: 85%;
+}
+    .modal__close{
+        top:-140px;
+    }
+}
