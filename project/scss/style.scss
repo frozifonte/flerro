@@ -1,0 +1,91 @@
+* {
+   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Fira Sans Regular', sans-serif;
+    src:url(../fonts/FiraSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Fira Sans Medium', sans-serif;
+    src:url(../fonts/FiraSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Bold', sans-serif;
+    src:url(../fonts/Montserrat-Bold.ttf);
+}
+.modal-button{
+     color: #484848;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px dashed #484848;
+}
+.modal-button:hover{
+    color: #FFC341;
+    border-bottom: 1px dashed #FFC341;
+    cursor: pointer;
+}
+.button{
+    background: linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
+    color: #fff;
+    border-radius: 80px;
+    padding: 15px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    width: 264px;
+    height: 59px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 17px;
+}
+.button:hover{
+   background:  linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+    cursor: pointer;
+}
+.button:active{
+   background:  radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+}
+.title{
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #1FC0FC;
+}
+.description{
+    font-family: "Fira Sans", sans-serif;
+    line-height: 170%;
+    color: #484848;
+    opacity: 0.87;
+}
+.input-text{
+    border-radius: 80px;
+    padding: 20px 40px;
+    border: 2px solid #E3E3E3;
+    box-sizing: border-box;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #484848;
+    
+}
+.input-text:focus{
+    border: 2px solid #FFC341;
+    box-sizing: border-box;
+}
+//.input-text:invalid{
+//    border: 2px solid #FF0000;
+//    box-sizing: border-box;
+//}
+.input-text::placeholder{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #484848;
+    opacity: 0.5;
+}
+.input-text:valid{
+    border: 2px solid #484848;
+    box-sizing: border-box;
+}
