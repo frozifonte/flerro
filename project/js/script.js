@@ -10,12 +10,19 @@ let checkBtn = document.getElementById("checkBtn");
 let modalSt = document.getElementsByClassName("modal")[0]; 
 let modalNd = document.getElementsByClassName("modal")[1];
 let linkModalMob = document.getElementById("modalButtonMob");
-//let form = document.querySelector(".form");
+let form = document.querySelector(".form");
 //let name = form.querySelector(".name");
 //let tel = form.querySelector(".tel");
-//let fields = form.querySelectorAll('.field');
+let fields = form.querySelectorAll('.field');
 //let checkbox = document.getElementById('check');
 //let paragraph = document.querySelector(".form__item--chech-descr");
+
+window.onload = function (){
+    if (localStorage.getItem("form")!== null) {
+        var fields = form.value;
+        localStorage.setItem("form","field");
+    }
+}
 
 modalBtn.onclick = function () {
     modalForm.style.display = "block";
@@ -54,11 +61,12 @@ function move () {
 //        error.innerHTML = 'Ошибка: поле не может оставаться пустым';
 //        erName.after(error);
         modalForm.style.display = "";
+        localStorage.setItem("form","field");
         modalSuc.style.display = "block";
     
     }
 //   form.addEventListener('submit', function (event) {
-//  event.preventDefault()
+//  
 //       
 //       //blank
 //       
@@ -109,14 +117,12 @@ function move () {
 //   
 //};
 //
-//
-//    
-//    
-//     
-//
-//
-//
-//
+
+function entered() {
+    event.preventDefault()
+    localStorage.setItem("form","fields");
+    modalSuc.style.display = "block";
+}
 closeModalForm.onclick = function () {
     modalForm.style.display = "";
 }
