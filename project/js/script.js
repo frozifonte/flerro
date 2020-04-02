@@ -18,11 +18,33 @@ let fields = form.querySelectorAll('.field');
 //let paragraph = document.querySelector(".form__item--chech-descr");
 
 window.onload = function (){
+ document.querySelector(".tabs__caption").addEventListener("click", fTabs);
     if (localStorage.getItem("form")!== null) {
         var fields = form.value;
-        localStorage.setItem("form","field");
+        localStorage.setItem("form",fields);
     }
-}
+        function fTabs(event) {
+           if (event.target.className == "tab__caption"){ 
+               let dataTab = event.target.getAttribute("data-tab");
+               let tabBody = document.getElementsByClassName("tab__content");
+               let tabList = document.querySelector(".tab__caption");
+               for (var i =0; i< tabBody.length;i++){
+                   if (dataTab==i){
+                        tabBody[i].style.display = "block";
+                   }
+                   else {
+                        tabBody[i].style.display = "none";
+                   }
+
+                  
+               }
+               
+                                                   
+           };
+        
+    }
+};
+
 
 modalBtn.onclick = function () {
     modalForm.style.display = "block";
@@ -40,6 +62,7 @@ linkModalMob.onclick = function () {
 //        this.style.border = "2px solid grey";
 //  }; 
 //
+
 function move () {
     event.preventDefault()
 //    let erName = document.forms["form"]["name"].value;
@@ -61,7 +84,7 @@ function move () {
 //        error.innerHTML = 'Ошибка: поле не может оставаться пустым';
 //        erName.after(error);
         modalForm.style.display = "";
-        localStorage.setItem("form","field");
+        localStorage.setItem("form",fields);
         modalSuc.style.display = "block";
     
     }
@@ -120,7 +143,7 @@ function move () {
 
 function entered() {
     event.preventDefault()
-    localStorage.setItem("form","fields");
+    localStorage.setItem("form",fields);
     modalSuc.style.display = "block";
 }
 closeModalForm.onclick = function () {

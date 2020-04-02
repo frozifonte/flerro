@@ -1,0 +1,117 @@
+.tabs__content { 
+    width: 56%;
+    margin-top: 20px;
+}
+.programms__wrapper{
+     margin: 0 auto;
+     width: 70%;
+}
+.tabs{
+    display: flex;
+    justify-content: space-between;
+}
+.tab__caption{
+    list-style-type: none;
+    padding-right: 41px;
+    color: #484848;
+    opacity: 0.87;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+i {
+    margin-right: 16px;
+}
+//.tab__caption--active{
+//    background:  linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+//    color:#fff;
+//    font-variant: small-caps;
+//    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+//}
+.tab__caption:hover{
+    cursor: pointer;
+    background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
+    color:#fff;
+    font-variant: small-caps;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+//.tab__caption:nth-child(2){
+//    position: relative;
+//    left: -2px;
+//}
+
+
+.programms{
+    background-image: url(../img/sketch_Bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 103px;
+    padding-bottom: 31px;
+}
+.tab__descr{
+    color: #484848;
+    opacity: 0.87;
+}
+.tab__title{
+    padding-bottom: 24px;
+}
+.tab__content{
+    display: none;
+}
+.programms__title{
+    text-align: left;
+    padding-bottom: 82px;
+    font-size: 49px;
+}
+@media screen and (max-width:1188px){
+    .tabs__content{
+        width: 70%;
+    }
+}
+@media screen and (max-width:768px){
+    .tabs{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tabs__caption{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+     .tabs__content{
+         text-align: center;
+        width: 100%;
+    }
+    .programms__wrapper{
+         width: 90%;
+}
+    i{
+        margin-right: 0;
+    }
+    .tab__caption:hover{
+        border-radius: 60.6704px;
+    }
+    .tab__caption{
+        list-style-type: none;
+        padding-right: 0;
+        color: #484848;
+        opacity: 0.87;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0;
+        margin-right: 0;
+        width: 100%;
+}
+    .programms__title{
+        text-align: center;
+        padding-bottom: 82px;
+        font-size: 49px;
+}
+}
+@media screen and (max-width:320px){
+    .tabs__caption{
+        display: flex;
+        overflow-y: scroll;
+    }
+}

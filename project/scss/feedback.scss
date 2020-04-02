@@ -1,0 +1,127 @@
+.toggle__left{
+    background: url(../img/leftAr.png) no-repeat;
+    width: 11px;
+    height: 18px; 
+    margin-right: 20px;
+}
+.toggle__right{
+    background: url(../img/rightAr.png) no-repeat;
+    width: 11px;
+    height: 18px; 
+}
+.feedback__link--fb{
+    background-image: url(../img/facebook.png);
+    background-repeat:no-repeat;
+    width:24px;
+    height:24px;
+    opacity:0.7;
+    position: relative;
+    top:-3px;
+    margin-right: 20px;
+}
+.feedback__link--tw{
+    background-image: url(../img/twitter.png);
+    background-repeat:no-repeat;
+    width:24px;
+    height:18px;
+    opacity:0.7;
+    margin-right: 20px;
+}
+.feedback__link--inst{
+    background-image: url(../img/instagram.png);
+    background-repeat:no-repeat;
+    width:20px;
+    height:20px;
+    opacity:0.7;
+}
+.feedback__links{
+    display:flex;
+    justify-content: flex-end;
+}
+.toggle{
+    display: flex;
+}
+.feedback{
+    background: url(../img/Group%204.png) no-repeat;
+    background-position: center right;
+}
+.feedback__wrapper{
+    margin: 118px auto;
+    width: 90%;
+}
+.feedback__content{
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.feedback__title{
+    text-align: center;
+}
+.feedback__sliders{
+    display: flex;
+    overflow: hidden;
+    padding-top: 48px;
+}
+.feedback__slider{
+    display:flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+.feedback__more{
+    display: block;
+    color: #1FC0FC;
+    text-decoration: underline;
+    margin-top: 18px;
+    margin-bottom: 55px;
+}
+.feedback__course{
+    color: #1FC0FC;
+}
+.toggle__all{
+    color: #484848;
+    opacity: 0.5;
+    font-size: 17px;
+    margin-right: 24px;
+}
+.feedback__name{
+    display: block;
+    font-size: 24px;
+    color: #484848;
+    opacity: 0.74;
+    margin-bottom: 18px;
+}
+.feedback__descr{
+    padding-top: 32px;
+}
+.feedback__slider img{
+    max-width: 100%;
+}
+@media screen and (max-width:768px){
+    .feedback__slider{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .feedback__slider img{
+        min-width: 100%;
+}
+    .feedback__links{
+        display:flex;
+        justify-content: flex-start;
+}
+    .toggle{
+        display: flex;
+        justify-content: center;
+        order: 0;
+}
+    .feedback__name{
+        order:1;
+    }
+    .feedback__course{
+        order:2;
+    }
+    .feedback__descr{
+        order:3;
+    }
+    .feedback__more{
+        order:4;
+    }
+}

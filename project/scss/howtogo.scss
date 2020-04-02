@@ -82,7 +82,7 @@
     padding-left: 16px;
 }
 .howtogo__img{
-    width: 50%;
+    width: 100%;
 }
 .howtogo{
     background-image: url(../img/94e69f645a3abbae86baefea2c0c513f.png);
@@ -93,6 +93,9 @@
         margin-left: 40px;
         margin-top: 100px;
         margin-right: 40px;
+}
+    .howtogo__img{
+        width: 50%;
 }
 }
 @media screen and (max-width:768px){
