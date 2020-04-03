@@ -90,3 +90,28 @@
     border: 2px solid #484848;
     box-sizing: border-box;
 }
+.link__fb{
+    background-image: url(../img/facebook.png);
+    background-repeat:no-repeat;
+    width:24px;
+    height:24px;
+    opacity:0.7;
+    position: relative;
+    top:-3px;
+    margin-right: 20px;
+}
+.link__tw{
+    background-image: url(../img/twitter.png);
+    background-repeat:no-repeat;
+    width:24px;
+    height:18px;
+    opacity:0.7;
+    margin-right: 20px;
+}
+.link__inst{
+    background-image: url(../img/instagram.png);
+    background-repeat:no-repeat;
+    width:20px;
+    height:20px;
+    opacity:0.7;
+}

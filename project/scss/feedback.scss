@@ -9,31 +9,6 @@
     width: 11px;
     height: 18px; 
 }
-.feedback__link--fb{
-    background-image: url(../img/facebook.png);
-    background-repeat:no-repeat;
-    width:24px;
-    height:24px;
-    opacity:0.7;
-    position: relative;
-    top:-3px;
-    margin-right: 20px;
-}
-.feedback__link--tw{
-    background-image: url(../img/twitter.png);
-    background-repeat:no-repeat;
-    width:24px;
-    height:18px;
-    opacity:0.7;
-    margin-right: 20px;
-}
-.feedback__link--inst{
-    background-image: url(../img/instagram.png);
-    background-repeat:no-repeat;
-    width:20px;
-    height:20px;
-    opacity:0.7;
-}
 .feedback__links{
     display:flex;
     justify-content: flex-end;

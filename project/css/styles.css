@@ -52,31 +52,6 @@
   width: 11px;
   height: 18px; }
 
-.feedback__link--fb {
-  background-image: url(../img/facebook.png);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  opacity: 0.7;
-  position: relative;
-  top: -3px;
-  margin-right: 20px; }
-
-.feedback__link--tw {
-  background-image: url(../img/twitter.png);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 18px;
-  opacity: 0.7;
-  margin-right: 20px; }
-
-.feedback__link--inst {
-  background-image: url(../img/instagram.png);
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  opacity: 0.7; }
-
 .feedback__links {
   display: flex;
   justify-content: flex-end; }
@@ -159,6 +134,42 @@
     order: 3; }
   .feedback__more {
     order: 4; } }
+
+.footer__hr {
+  opacity: 0.2;
+  border: 1px solid #484848; }
+
+.footer__wrapper {
+  width: 88%;
+  margin: 0 auto; }
+
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+.footer__item {
+  font-size: 12px;
+  color: #484848;
+  opacity: 0.5;
+  font-family: sans-serif; }
+
+.footer__links {
+  display: flex; }
+
+@media screen and (max-width: 425px) {
+  .footer__item--logo {
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center; }
+  .footer__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .footer__item {
+    margin-bottom: 28px;
+    margin-top: 24px; } }
 
 header {
   background-image: url(../img/bg.png);
@@ -637,6 +648,31 @@ i {
 .input-text:valid {
   border: 2px solid #484848;
   box-sizing: border-box; }
+
+.link__fb {
+  background-image: url(../img/facebook.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  position: relative;
+  top: -3px;
+  margin-right: 20px; }
+
+.link__tw {
+  background-image: url(../img/twitter.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 18px;
+  opacity: 0.7;
+  margin-right: 20px; }
+
+.link__inst {
+  background-image: url(../img/instagram.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  opacity: 0.7; }
 
 .wanna-go__wrapper {
   display: flex;
