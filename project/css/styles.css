@@ -485,6 +485,157 @@ label:before {
   .form__item {
     width: 100%; } }
 
+.more__up-content {
+  display: flex; }
+
+.more__wrapper {
+  margin-left: 110px; }
+
+.more__guide {
+  display: flex; }
+
+.more__title {
+  margin-bottom: 48px; }
+
+.more__city::before {
+  content: url(../img/marker.png);
+  width: 12px;
+  height: 18px;
+  margin-right: 8px; }
+
+.more__city {
+  color: #484848;
+  opacity: 0.74;
+  font-size: 15px; }
+
+.more__current-city::after {
+  content: url(../img/gps.png);
+  width: 16px;
+  height: 15px;
+  margin-left: 9px;
+  border: 0; }
+
+.more__current-city {
+  text-transform: uppercase;
+  border-bottom: 1px dashed #1FC0FC;
+  color: #484848;
+  padding-bottom: 1px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold; }
+
+.more__guide-pic {
+  width: 112px;
+  height: 112px;
+  margin-right: 20px; }
+
+.more__guide-place {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  color: #484848;
+  opacity: 0.74;
+  font-size: 13px; }
+
+.more__up-content {
+  margin-top: 39px; }
+
+.more__guide {
+  font-style: normal; }
+
+.more__guide-name {
+  text-decoration: none;
+  color: #1FC0FC; }
+
+.more__guide--curent-name {
+  color: #484848;
+  opacity: 0.74; }
+
+.more__guide-descr {
+  margin-top: 32px; }
+
+.more__down-content {
+  display: flex;
+  margin-top: 60px; }
+
+.more__d-title {
+  font-size: 17px;
+  color: #484848;
+  opacity: 0.87;
+  font-family: "Fira Sans", sans-serif; }
+
+.more__d-descr {
+  color: #484848;
+  opacity: 0.5;
+  font-size: 13px;
+  font-family: "Fira Sans", sans-serif; }
+
+.more__down-descr {
+  margin-right: 50px;
+  width: 30%; }
+
+.more__form-input {
+  margin-right: 10px; }
+
+@media screen and (max-width: 1366px) {
+  .more__down-descr {
+    margin-right: 20px;
+    width: 30%; }
+  .more__form-input {
+    margin-right: 5px; }
+  .more__wrapper {
+    margin-left: 55px; } }
+
+@media screen and (max-width: 1266px) {
+  .more__down-descr {
+    margin-right: 13px;
+    width: 30%; }
+  .more__form-input {
+    margin-right: 2.5px; }
+  .more__wrapper {
+    margin-left: 25px; } }
+
+@media screen and (max-width: 1200px) {
+  .more__guide {
+    display: block; }
+  .more__form {
+    display: flex;
+    justify-content: center; }
+  .more__form-input {
+    margin-right: 5px; }
+  .more__down-content {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 1024px) {
+  .more__up-content {
+    display: flex;
+    flex-direction: column; }
+  .more__down-descr {
+    margin-right: 0;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px; }
+  .more__map {
+    min-width: 100%;
+    margin-top: 10px; }
+  .more__wrapper {
+    margin: 0 auto;
+    width: 90%; } }
+
+@media screen and (max-width: 520px) {
+  .more__map {
+    max-width: 100%;
+    margin-top: 10px; }
+  .more__form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto; }
+  .more__down-descr {
+    margin: 0 auto; }
+  .more__form-input {
+    margin-right: 0;
+    margin-bottom: 5px; } }
+
 .nav__items {
   display: flex;
   justify-content: space-around; }
