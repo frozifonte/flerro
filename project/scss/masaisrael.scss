@@ -1,0 +1,104 @@
+.masaisrael{
+    background-image: url(../img/cynthia-magana-.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 583px;
+    &__wrapper{
+        padding-top: 0px;
+        padding-bottom: 196px;
+    }
+    &__content{
+        padding-top: 200px;
+        padding-left: 60%;
+    }
+    &__descr{
+        padding-top: 24px;
+        padding-bottom: 43px;
+        opacity: 0.87;
+        color:#fff;
+        width:60%;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+        font-size: 17px;
+        line-height: 170%;
+    }
+    &__button{
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    }
+    &__button:hover{
+        
+    }
+    &__button::before{
+        content: url("../img/003-instagram.png");
+        margin-right: 8px;
+        position: relative;
+        bottom: -5px;
+    }
+    &__button--mob {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+        display: none;
+    }
+     &__button--mob::before{
+        content: url("../img/003-instagram.png");
+        margin-right: 8px;
+        position: relative;
+        bottom: -5px;
+    }
+    &__title--mob{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .masaisrael__title--mob{
+        display: block;
+        margin-top: 80px;
+        text-align: center;
+    }
+    .masaisrael__button--mob {
+        display: block;
+        margin: 0 auto;
+    }
+    .masaisrael__title{
+        display: none;
+    }
+    .masaisrael__button {
+        display: none;
+    }
+    .masaisrael__wrapper{
+        padding-bottom: 100px;
+    }
+    .masaisrael__descr{
+        width: 60%;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    .masaisrael__content{
+        display: flex;
+        align-items: flex-start;
+        padding-top: 350px;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:425px){
+    .masaisrael{
+        background-size: cover;
+        background-position: center center;
+    }
+     .masaisrael__content{
+        padding-top: 250px;
+    }
+}
+@media screen and (max-width:320px){
+     .masaisrael__content{
+        padding-top: 200px;
+    }
+    .masaisrael__button--mob {
+        margin-bottom: 20px;
+    }
+}
